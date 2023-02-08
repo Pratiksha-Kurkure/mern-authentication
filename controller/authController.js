@@ -109,7 +109,8 @@ exports.forgetPaaswordController = async (req, res) => {
             {
                 sendTo: req.body.email,
                 sub: "Instruction For Forget Password with SKILLHUB",
-                txt: `http://127.0.0.1:5173/reset-password/${result._id}`
+                // txt: `http://127.0.0.1:5173/reset-password/${result._id}`
+                txt: `https://vast-puce-rooster-kilt.cyclic.app/reset-password/${result._id}`
             }
         )
         res.json({
